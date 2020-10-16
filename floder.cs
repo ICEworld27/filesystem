@@ -24,6 +24,7 @@ namespace failsysyt
         public floder copy()
         {
             floder reserv = new floder(this.name);
+            reserv._name = _name;
             for (int i = 0; i < files.Count; i++)
             {
                 reserv.add(files[i].copy());
