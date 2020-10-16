@@ -26,20 +26,8 @@ namespace failsysyt
         }
         public void RestoreMemoTo(MemoTo n)
         {
-            if (n != null)
-            {
-                a = n;
-            }
-            else
-            {
-                 a = new MemoTo();
-                 a = n;
-            }
-            
-        }
-        public void ResetByMemoTo(MemoTo n)
-        {
-            State = b.root;
+            MemoToReal r = (MemoToReal)n;
+            State = r.root.copy();
 
         }
     }

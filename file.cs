@@ -27,7 +27,9 @@ namespace failsysyt
         }
         public file copy()
         {
-            return this.copy();
+            file r = new file();
+            r = this;
+            return r;
         }
         public file(string vname = null)
         {
