@@ -6,13 +6,25 @@ namespace failsysyt
 {
     class System
     {
+        private static System instance;
+        public static System getInstance()
+        {
+            if (instance == null)
+                instance = new System();
+            return instance;
+        }
         private floder State = new floder("C:/");
         MemoTo a;
-        public MemoTo  CreatMemoTo()
+        MemoToReal b;
+        public MemoTo CreatMemoTo()
         {
-            return a =  new MemoTo();
+            MemoToReal m = new MemoToReal();
+
+            m.root = State.copy();
+            a = m;
+            return a;
         }
-        public void CreatMemoTo(MemoTo n)
+        public void RestoreMemoTo(MemoTo n)
         {
             if (n != null)
             {
@@ -24,6 +36,11 @@ namespace failsysyt
                  a = n;
             }
             
+        }
+        public void ResetByMemoTo(MemoTo n)
+        {
+            State = b.root;
+
         }
     }
 }

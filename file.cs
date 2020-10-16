@@ -7,6 +7,7 @@ namespace failsysyt
 {
     class file
     {
+        private string _name;
         string name
         {
             get
@@ -18,17 +19,21 @@ namespace failsysyt
                 if (value == "")
                 {
                     Console.WriteLine("Введите название:");
-                    name = Console.ReadLine();
+                    value = Console.ReadLine();
                 }
-                name = value;
+                value = value;
 
             }
+        }
+        public file copy()
+        {
+            return this.copy();
         }
         public file(string vname = null)
         {
             if (vname == null)
             {
-                name = "";
+                name = "New floder";
             }
             else
             {

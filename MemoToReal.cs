@@ -4,11 +4,14 @@ using System.Text;
 
 namespace failsysyt
 {
-    class MemoToReal
+    class MemoToReal : MemoTo
     {
-        class MementoReal : MemoTo
+      
+        public floder root;
+        public MemoTo createMemento()
         {
-            public floder root = new floder("C");
+            return new MemoToReal();
         }
+
     }
 }
