@@ -14,15 +14,17 @@ namespace failsysyt
             return instance;
         }
         private floder State = new floder("C:/");
-        MemoTo a;
+        
         MemoToReal b;
         public MemoTo CreatMemoTo()
         {
+            MemoTo a;
             MemoToReal m = new MemoToReal();
 
             m.root = State.copy();
             a = m;
             return a;
+            
         }
         public void RestoreMemoTo(MemoTo n)
         {

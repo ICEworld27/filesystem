@@ -12,7 +12,7 @@ namespace failsysyt
         {
             get
             {
-                return name;
+                return _name;
             }
             set
             {
@@ -21,7 +21,7 @@ namespace failsysyt
                     Console.WriteLine("Введите название:");
                     value = Console.ReadLine();
                 }
-                value = value;
+                _name = value;
 
             }
         }

@@ -39,7 +39,7 @@ namespace failsysyt
         public void Remove(file file)
         {
             files.Remove(file);
-            Console.WriteLine("Добавлено успешно!");
+            Console.WriteLine("Удалено успешно!");
         }
         public floder(string name) : base(name)
         {
