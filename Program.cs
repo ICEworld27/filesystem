@@ -25,7 +25,7 @@ namespace failsysyt
             user.add(new floder("Virus"));
             ca.AddMemoTo(a.CreatMemoTo());
             user.add(new floder("Virus"));
-            for (int i = 0; i <= 10; i++) //грузится за минуту 0000
+            for (int i = 0; i <= 100000; i++) //грузится за минуту 
             {
                 user.add(new file("Virus"));
                 s.add(new file("Virus"));
