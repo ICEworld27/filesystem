@@ -8,19 +8,6 @@ namespace failsysyt
     {
         List<file> files;
         //private string _name;
-        public string name
-        {
-            get
-            {
-                return value;
-            }
-            set
-            {
-                //Console.WriteLine("Введите название:");
-                name = value;
-
-            }
-        }
         public floder copy()
         {
             floder reserv = new floder(this.name);
