@@ -24,7 +24,8 @@ namespace failsysyt
             m.root = State.copy();
             a = m;
             return a;
-            
+
+
         }
         public void RestoreMemoTo(MemoTo n)
         {

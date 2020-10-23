@@ -8,10 +8,6 @@ namespace failsysyt
     {
       
         public floder root;
-        public MemoTo createMemento()
-        {
-            return new MemoToReal();
-        }
 
     }
 }

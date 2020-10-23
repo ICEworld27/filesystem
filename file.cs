@@ -12,16 +12,17 @@ namespace failsysyt
         {
             get
             {
-                return _name;
+                return name;
             }
             set
             {
-                if (value == "")
+                /*if (value == "")
                 {
                     Console.WriteLine("Введите название:");
                     value = Console.ReadLine();
                 }
-                _name = value;
+                */
+                name = value;
 
             }
         }
