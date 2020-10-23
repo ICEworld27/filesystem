@@ -13,7 +13,7 @@ namespace failsysyt
                 instance = new System();
             return instance;
         }
-        private floder State = new floder("C:/");
+        public floder State = new floder("C:/");
         
         public MemoTo CreatMemoTo()
         {
@@ -27,8 +27,9 @@ namespace failsysyt
         public void RestoreMemoTo(MemoTo n)
         {
             MemoToReal r = (MemoToReal)n;
-            State = r.root.copy();
+            State = (floder)r.root.copy();
 
         }
+
     }
 }

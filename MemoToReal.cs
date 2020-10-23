@@ -7,7 +7,7 @@ namespace failsysyt
     class MemoToReal : MemoTo
     {
       
-        public floder root;
+        public file root;
 
     }
 }

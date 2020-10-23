@@ -8,7 +8,7 @@ namespace failsysyt
     {
         List<file> files;
         //private string _name;
-        public floder copy()
+        public override file copy()
         {
             floder reserv = new floder(this.name);
             reserv.name = name;
@@ -31,6 +31,16 @@ namespace failsysyt
         public floder(string name) : base(name)
         {
             files = new List<file>();
+        }
+        public override string ToString()
+        {
+            string r = "-" + name;
+            for (int i = 0; i < files.Count; i++)
+            {
+                r += ( "\n" + "    " );
+                r += files[i].ToString();
+            }
+            return r;
         }
     }
 }

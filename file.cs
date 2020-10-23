@@ -29,7 +29,7 @@ namespace failsysyt
             }
         }
     */
-        public file copy()
+        public  virtual file copy()
         {
             file r = new file(name);
             return r;
@@ -38,12 +38,16 @@ namespace failsysyt
         {
             if (vname == null)
             {
-                name = "New floder";
+                name = "New";
             }
             else
             {
                 name = vname;
             }
+        }
+        public override string ToString()
+        {
+            return name;
         }
     }
 }
