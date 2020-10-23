@@ -12,7 +12,7 @@ namespace failsysyt
         {
             get
             {
-                return name;
+                return value;
             }
             set
             {

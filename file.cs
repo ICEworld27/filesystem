@@ -6,8 +6,10 @@ using System.Text;
 namespace failsysyt
 {
     class file
-    {
-        private string _name;
+    { 
+
+        public string name { get; set; }
+        /*
         string name
         {
             get
@@ -21,14 +23,15 @@ namespace failsysyt
                     Console.WriteLine("Введите название:");
                     value = Console.ReadLine();
                 }
-                */
+                
                 name = value;
 
             }
         }
+    */
         public file copy()
         {
-            file r = new file(_name);
+            file r = new file(name);
             return r;
         }
         public file(string vname = null)

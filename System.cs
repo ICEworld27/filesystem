@@ -15,15 +15,12 @@ namespace failsysyt
         }
         private floder State = new floder("C:/");
         
-        MemoToReal b;
         public MemoTo CreatMemoTo()
         {
-            MemoTo a;
             MemoToReal m = new MemoToReal();
 
             m.root = State.copy();
-            a = m;
-            return a;
+            return m;
 
 
         }
